@@ -8,7 +8,6 @@ public class Task01 {
     private static final File outputFile = new File("src\\com\\gpsolutions\\task01\\OUTPUT.TXT");
 
     public static void main(String[] args) {
-        //long startTime = System.currentTimeMillis();
 
         int k1, l1, m1, k2, l2, m2 , restedBolt, restedNut, result;
 
@@ -64,7 +63,5 @@ public class Task01 {
         catch (IOException e) {
             System.out.println("Error IO");
         }
-        //long stopTime = System.currentTimeMillis();
-        //System.out.println("Calculating time: " + (stopTime - startTime) + " milliseconds");
     }
 }
