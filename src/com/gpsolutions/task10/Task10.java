@@ -1,6 +1,8 @@
 package com.gpsolutions.task10;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -8,29 +10,8 @@ import java.io.*;
  */
 public class Task10 {
 
-    private static final File inputFile = new File("src\\com\\gpsolutions\\task09\\INPUT.TXT");
-    private static final File outputFile = new File("src\\com\\gpsolutions\\task09\\OUTPUT.TXT");
-
-    public static void main(String[] args) throws IOException{
-        BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-        PrintWriter writer = new PrintWriter(new FileWriter(outputFile));
-
-
-
-
-
-        writer.print("YES");
-        reader.close();
-        writer.close();
-    }
-}
-/*import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
-
-public class Main {
-    private static final File inputFile = new File("INPUT.TXT");
-    private static final File outputFile = new File("OUTPUT.TXT");
+    private static final File inputFile = new File("src\\com\\gpsolutions\\task10\\INPUT.TXT");
+    private static final File outputFile = new File("src\\com\\gpsolutions\\task10\\OUTPUT.TXT");
 
     public static void main(String[] args) throws IOException{
         BufferedReader reader = new BufferedReader(new FileReader(inputFile));
@@ -65,7 +46,7 @@ public class Main {
         int start = 0;
         int end = 1;
         int marker = 3;
- label: while (true) {
+        label: while (true) {
             for (int i = start; i < end; i++) {
                 int[] point = list.get(i);
                 int a = point[0];
@@ -135,4 +116,4 @@ public class Main {
         reader.close();
         writer.close();
     }
-}*/
+}
